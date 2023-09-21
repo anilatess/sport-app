@@ -1,0 +1,76 @@
+/* flex-wrap: wrap; içerikler sıkıştığı durumda otomatik olarak alta atılır */ 
+/* justify-content ana yönü baz alır */ 
+/* align-items ters yönü baz alır */ 
+
+.workout-programs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 20px 5px rgb(218, 218, 218); 
+}
+
+.workout-programs .title {
+    font-size: 20px;
+}
+
+.card-list {
+    display: grid; /* içindeki her element, sahip olduğu boyut kadar yer kaplayabilir */
+    grid-template-columns: repeat(3,1fr); /* 3'erli eşit boyutlarda ızgara şablonu kurar */
+    gap: 20px;
+}
+
+.card-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    width: 285px;
+    flex-direction: column;
+    align-items: center; /*  ters yönü baz alır */
+    gap: 6px;
+    border-radius: 5px;
+    padding: 20px 0px;
+    box-shadow: 0px 0px 5px 1px rgb(218, 218, 218);
+    
+}
+
+.card img {
+    width: 185px;
+}
+
+.card button {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 0px;
+    background-color: red;
+    cursor: pointer;
+}
+
+.card i {
+    color: white;
+    font-size: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-40%,-50%);
+}
+
+.title {
+    text-align: center;
+}
+
+
+.buttons{
+    text-align: right;
+}
+
+.check-wrapper {
+    display: flex;
+    justify-content: flex-end;
+}
