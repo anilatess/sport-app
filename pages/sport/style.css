@@ -8,6 +8,7 @@
     gap: 20px;
     border-radius: 10px;
     box-shadow: 1px 1px 20px 5px rgb(218, 218, 218); 
+    padding: 20px;
 }
 
 .workout-programs .title {
@@ -16,14 +17,9 @@
 
 .card-list {
     display: grid; /* içindeki her element, sahip olduğu boyut kadar yer kaplayabilir */
-    grid-template-columns: repeat(3,1fr); /* 3'erli eşit boyutlarda ızgara şablonu kurar */
-    gap: 20px;
-}
-
-.card-wrapper {
-    display: flex;
-    flex-direction: row;
+    grid-template-columns: repeat(3,285px); /* 3'erli eşit boyutlarda ızgara şablonu kurar */
     justify-content: center;
+    gap: 40px;
 }
 
 .card {
@@ -68,9 +64,10 @@
 
 .buttons{
     text-align: right;
+    max-width: 935px;
+    margin: 0 auto;
 }
 
 .check-wrapper {
-    display: flex;
-    justify-content: flex-end;
+    text-align: right;
 }

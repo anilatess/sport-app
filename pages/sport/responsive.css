@@ -1,0 +1,18 @@
+ @media (max-width:1040px) {
+    .card-list {
+        grid-template-columns: repeat(2,285px);
+    }
+
+    .buttons{
+        max-width: 610px;
+    }
+}
+@media (max-width:768px) {
+    .card-list {
+        grid-template-columns: repeat(1,285px);
+    }
+
+    .buttons{
+        max-width: 285px;
+    }
+} 
