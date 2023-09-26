@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@200;300;400;500;600&display=swap');
 
 * {
     margin: 0;
@@ -7,9 +7,11 @@
 }
 
 body {
-    font-family: 'Merriweather', sans-serif;
+    font-family: 'Martian Mono', monospace;
     overflow-x: hidden;
+    background-color: #fafafa;
 }
+
 
 .container {
     max-width: 1200px;
@@ -39,4 +41,31 @@ body {
 }
 .btn-info{
     background-color:rgb(0, 153, 255)
+}
+
+nav ul{
+ display: flex;
+ list-style-type:none;
+ gap: 20px;
+}
+
+nav{
+    background-color: rgb(80, 79, 79);
+    
+}
+
+nav ul a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+nav ul a:hover{
+    text-decoration: underline;
+}
+
+.navbar{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content:space-between;
 }
