@@ -15,4 +15,14 @@
     .buttons{
         max-width: 285px;
     }
+
+    .navbar {
+    flex-direction: column;
+
+    }
+
+    nav ul a {
+        font-size: 10px;
+    }
 } 
+
